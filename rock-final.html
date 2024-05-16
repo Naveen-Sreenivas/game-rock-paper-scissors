@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rps6</title>
+    <link rel="stylesheet" href="rps-slyle.css">
+</head>
+
+<body>
+
+<p class="title">ROCK PAPER SCISSOR</p>
+
+<button
+class="move-button"
+onclick="
+
+playGame('rock');
+
+"
+
+><img src="imagerock/rock-emoji.png" class="move-icon"></button>
+<!--the image element dosnt have a closing element this call void element-->
+
+
+<button
+class="move-button"
+onclick="
+
+playGame('paper');
+
+"
+
+><img src="imagerock/paper-emoji.png " class="move-icon"alt="paper"></button>
+
+
+
+<button
+class="move-button"
+onclick="
+
+playGame('scissor');
+
+"
+
+><img src="imagerock/scissor-emoji.png"class="move-icon" alt="scissors"></button>
+
+<p class="js-result result"></p>
+ 
+<p class="js-moves"></p>
+
+<p class="js-score score"></p><!--<p> is a block element it always takes up an entire line by itself. button is not like that and block elements takes up the entire line-->
+
+<button class="reset-score-button" onclick="
+
+resetScore();
+
+">reset</button> 
+
+    <script src="rps.js"></script>
+
+
+</body>
+</html>
